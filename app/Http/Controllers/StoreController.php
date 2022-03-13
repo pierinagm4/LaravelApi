@@ -12,4 +12,8 @@ class StoreController extends Controller
         return store::all();
     }
 
+    public function getStoreByID($id){
+        return store::find($id);
+    }
+
 }

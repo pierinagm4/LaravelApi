@@ -19,3 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/stores', [StoreController::class, 'getStore']);
+
+Route::get('/stores/{id}', [StoreController::class, 'getStoreByID']);
+
